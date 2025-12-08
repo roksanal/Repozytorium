@@ -1,0 +1,21 @@
+#!usr/bin/bash
+declare x=0
+declare y=0
+for ((x=0; x<1000; x++)); do
+
+	((y=y+x))
+if ((y>1000)); then
+	break
+fi
+echo "$x i $y"
+done 
+
+x=0
+y=0
+while ((y<1000));
+do
+	((x++))
+	((y=x+y))
+echo "$x i $y"
+done
+
